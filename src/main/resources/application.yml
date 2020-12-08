@@ -1,0 +1,14 @@
+app:
+  name: name
+  description: description
+  id: 123
+  persistence:
+    datasource1:
+      name: datasource-1
+      url: http://yahoo.com
+      username: username
+      password: password
+      schema: myschema
+
+app-config:
+  url: ${app.persistence.datasource1.url}
