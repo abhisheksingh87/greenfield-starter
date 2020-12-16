@@ -1,4 +1,4 @@
-package com.wellsfargo.starter.greenfield;
+package com.wellsfargo.cto.eai.starter;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +8,7 @@ import org.springframework.core.env.Environment;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
-class GreenfieldApplicationTests {
+class GreenfieldMicroserviceTests {
 
 	@Autowired
 	private Environment environment;

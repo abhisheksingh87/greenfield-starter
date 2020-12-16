@@ -10,5 +10,3 @@ app:
       password: password
       schema: myschema
 
-app-config:
-  url: ${app.persistence.datasource1.url}

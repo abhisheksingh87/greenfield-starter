@@ -5,7 +5,7 @@ plugins {
 }
 
 description = "spring boot starter for a greenfield application"
-group = 'com.wellsfargo.starter'
+group = 'com.wellsfargo.cto.eai.starter.greenfield'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 

@@ -1,13 +1,13 @@
-package com.wellsfargo.starter.greenfield;
+package com.wellsfargo.cto.eai.starter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GreenfieldApplication {
+public class GreenfieldMicroservice {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GreenfieldApplication.class, args);
+		SpringApplication.run(GreenfieldMicroservice.class, args);
 	}
 
 }
