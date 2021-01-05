@@ -1,17 +1,21 @@
-app:
-  name: name
-  description: description
-  id: 123
+application:
+  id: 1
   persistence:
-    datasource1:
-      name: datasource-1
-      url: http://yahoo.com
-      username: username
-      password: password
-      schema: myschema
+    oracle:
+      name: oracle-datasource
+      url: \${oracle.db.url?:UNDEFINED}
+      username: \${oracle.username?:UNDEFINED}
+      password: \${oracle.password?:UNDEFINED}
+      schema: \${oracle.schema?:UNDEFINED}
+      dialect: org.hibernate.dialect.Oracle12cDialect
+      driver: oracle.jdbc.OracleDriver
 
-app-config:
-  url: ${app.persistence.datasource1.url}
+info:
+  app:
+    name: ${rootProject.name}
+    description: ${project.description}
+    version: ${project.version}
+    distributed-id: \${application.id}
 
 spring:
   autoconfigure:

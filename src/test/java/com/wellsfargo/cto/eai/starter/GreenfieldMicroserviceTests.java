@@ -15,9 +15,5 @@ class GreenfieldMicroserviceTests {
 
 	@Test
 	void contextLoads() {
-
-		assertEquals(environment.getProperty("app-config.url"),
-					    "http://yahoo.com");
 	}
-
 }
