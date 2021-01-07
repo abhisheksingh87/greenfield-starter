@@ -12,7 +12,7 @@ Both the app starters share a common tech stack, comprising components approved 
 ![Application Tech Stack](tech-stack.jpg)
 
 
-The **Application Starter Cookbook** provides recipes to help complete the tasks required to build a fully functional spring boot microservice using the starters.
+The **Application Starter Cookbook** contains recipes to help developers complete tasks required to build a fully functional spring boot microservice using the starters.
 
 ---
 ### Prerequisite
