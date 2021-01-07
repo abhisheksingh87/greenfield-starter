@@ -38,5 +38,5 @@ test {
 }
 
 processResources {
-		expand(project.properties)
+	expand(project.properties)
 }
