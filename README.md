@@ -9,7 +9,7 @@ The application starters will help Wells Fargo developers to create _non-reactiv
 
 Both the app starters share a common tech stack, comprising components approved for use within Wells Fargo.
 
-![Application Tech Stack](tech-stack.jpg)
+![Application Tech Stack](./tech-stack.png)
 
 
 The **Application Starter Cookbook** contains recipes to help developers complete tasks required to build a fully functional spring boot microservice using the starters.
