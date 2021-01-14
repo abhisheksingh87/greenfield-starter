@@ -7,7 +7,6 @@ application:
       username: \${oracle.username?:UNDEFINED}
       password: \${oracle.password?:UNDEFINED}
       schema: \${oracle.schema?:UNDEFINED}
-      dialect: org.hibernate.dialect.Oracle12cDialect
       driver: oracle.jdbc.OracleDriver
 
 info:
@@ -18,6 +17,22 @@ info:
     distributed-id: \${application.id}
 
 spring:
+  main:
+    lazy-initialization: true
   autoconfigure:
     exclude:
-      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+#      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  datasource:
+    hikari:
+      pool-name: \${application.persistence.oracle.name}-hikari-pool
+      jdbc-url:  \${application.persistence.oracle.url}
+      username:  \${application.persistence.oracle.username}
+      password:  \${application.persistence.oracle.password}
+      driver-class-name: \${application.persistence.oracle.driver}
+      schema: \${application.persistence.oracle.schema}
+      maximum-pool-size: 10
+      minimum-idle: 3
+      connection-timeout: 1
+      idle-timeout: 1
+      max-lifetime: 1
+
