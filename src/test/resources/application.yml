@@ -2,7 +2,7 @@ mongo:
   hosts:
     - localhost:27017
   database: test
-  reWrites: false
+  retryWrites: false
 
 management:
   endpoints:
