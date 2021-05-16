@@ -70,7 +70,7 @@ public class MongoTransactionsTest {
                 .phoneNumber("7589756789")
                 .build();
 
-        assertThrows(MongoTransactionException.class, ()-> {
+        assertThrows(MongoTransactionException.class, () -> {
             if (mongoTemplate.collectionExists(Customer.class)) {
                 customerRepository.save(customer1);
                 customerRepository.save(customer2);

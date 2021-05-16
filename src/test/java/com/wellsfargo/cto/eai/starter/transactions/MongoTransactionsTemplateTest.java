@@ -41,7 +41,7 @@ public class MongoTransactionsTemplateTest {
 
     @AfterEach
     public void tearDown() {
-       mongoTemplate.dropCollection(Customer.class);
+        mongoTemplate.dropCollection(Customer.class);
     }
 
     @Test

@@ -8,8 +8,8 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @EnableMongoRepositories
 public class GreenfieldMicroservice {
 
-	public static void main(String[] args) {
-		SpringApplication.run(GreenfieldMicroservice.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(GreenfieldMicroservice.class, args);
+    }
 
 }

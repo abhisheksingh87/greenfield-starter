@@ -10,10 +10,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest
 class GreenfieldMicroserviceTests {
 
-	@Autowired
-	private Environment environment;
+    @Autowired
+    private Environment environment;
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 }
