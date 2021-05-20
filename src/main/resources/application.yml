@@ -1,5 +1,6 @@
 mongo:
-  hosts: ${mongoDBUrl}
+  hosts:
+    - localhost:27017
   database: test
   reWrites: false
 
@@ -13,16 +14,16 @@ management:
       show-details: always
 
 
-spring:
-  datasource:
-    url: ${oracle_jdbcUrl}
-    username: ${oracle_username}
-    password: ${oracle_password}
-    schema: ${oracle_schema}
-    driver-class-name: oracle.jdbc.driver.OracleDriver
-    hikari:
-      minimum-idle: ${oracle_connection_minimumIdle}
-      maximum-pool-size: ${oracle_connection_maximumPoolSize}
-      connection-timeout: ${oracle_connection_timeOut}
-      pool-name: HikariPool
-      max-lifetime: ${oracle_connection_maxLifeTime}
+#spring:
+#  datasource:
+#    url: ${oracle_jdbcUrl}
+#    username: ${oracle_username}
+#    password: ${oracle_password}
+#    schema: ${oracle_schema}
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    hikari:
+#      minimum-idle: ${oracle_connection_minimumIdle}
+#      maximum-pool-size: ${oracle_connection_maximumPoolSize}
+#      connection-timeout: ${oracle_connection_timeOut}
+#      pool-name: HikariPool
+#      max-lifetime: ${oracle_connection_maxLifeTime}
